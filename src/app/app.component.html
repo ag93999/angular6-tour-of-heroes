@@ -3,5 +3,12 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/heroes">Heroes</a>
+</nav>
 
-  <app-heroes></app-heroes>
+  <router-outlet></router-outlet>
+  <!--<app-hero-detail [hero]="selectedHero"></app-hero-detail>-->
+  <app-messages></app-messages>
+
