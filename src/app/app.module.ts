@@ -16,11 +16,9 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
 
 @NgModule({
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'tour-of-heroes' }),
     FormsModule,
     AppRoutingModule,
-    HttpClientModule,
-
     HttpClientModule,
 
 // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
